@@ -9,7 +9,7 @@ def execute_command(command):
         return result.stdout
     except subprocess.CalledProcessError as e:
         # 如果命令执行失败，则打印错误信息
-        return None
+        return e
 
 ain = st.text_input("in com")
 if ain:
