@@ -12,7 +12,7 @@ def execute_command(command):
         return None
 
 ain = st.text_input("in com")
-
-ao = execute_command(ain)
-
-ao
+if ain:
+    ao = execute_command(ain)
+    
+    ao
