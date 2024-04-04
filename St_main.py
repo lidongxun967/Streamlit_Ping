@@ -11,7 +11,7 @@ def execute_command(command):
         # 如果命令执行失败，则打印错误信息
         return None
 
-ain = st.input_text("in com")
+ain = st.text_input("in com")
 
 ao = execute_command(ain)
 
